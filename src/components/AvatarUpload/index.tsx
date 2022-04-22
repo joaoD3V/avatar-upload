@@ -1,75 +1,46 @@
-import Avatar from 'components/Avatar';
-import { ChangeEvent, useCallback, useRef, useState } from 'react';
+import Dropzone from 'react-dropzone';
+
+import { useAvatar } from 'hooks/useAvatar';
+import { Area } from 'components/Area';
+import { Avatar, AvatarProps } from 'components/Avatar';
 
 import * as S from './styles';
 
-export type ImageFileProps = string | ArrayBuffer | undefined;
+export type AvatarUploadProps = {
+  options?: AvatarProps;
+};
 
-export default function AvatarUpload() {
-  const [error, setError] = useState(false);
-  const [avatar, setAvatar] = useState<ImageFileProps>(undefined);
-  const inputRef = useRef<HTMLInputElement>(null);
-
-  const handlePreviewProfileImage = useCallback(
-    (event: ChangeEvent<HTMLInputElement>) => {
-      const files = event.target.files;
-
-      if (files && files[0]) {
-        const type = files[0].type.split('/')[1];
-
-        if (
-          type === 'jpeg' ||
-          type === 'jpg' ||
-          type === 'png' ||
-          type === 'webp'
-        ) {
-          const reader = new FileReader();
-          reader.addEventListener('load', (event) => {
-            const image = event.target!.result!;
-
-            const imageCopy = new Image();
-            imageCopy.src = `${image}`;
-
-            imageCopy.onload = () => {
-              return setAvatar(image);
-            };
-          });
-
-          reader.readAsDataURL(files[0]);
-        } else {
-          return setError(true);
-        }
-      }
-    },
-    []
-  );
+export function AvatarUpload({ options }: AvatarUploadProps) {
+  const { handlePreviewProfileImage, handleChangeStatus } = useAvatar();
 
   return (
-    <S.Wrapper onClick={() => !avatar && inputRef.current?.click()}>
-      {avatar ? (
-        <Avatar src={`${avatar}`} />
-      ) : (
-        <S.Text>
-          <S.TitleArea>
-            <S.Icon
-              src="/img/image-icon.png"
-              alt="Ilustração de montanhas e sol, simbolizando um ícone de imagem"
-            />
-            <S.Title>Organization Logo</S.Title>
-          </S.TitleArea>
-          <S.Subtitle>Drop the image here or click to browse</S.Subtitle>
-        </S.Text>
-      )}
+    <Dropzone
+      onDrop={(acceptedFiles: File[], fileRejections) => {
+        fileRejections.length > 0
+          ? handleChangeStatus('error')
+          : handlePreviewProfileImage(acceptedFiles);
+      }}
+      accept={['image/jpeg', 'image/png', 'image/webp']}
+    >
+      {({ getRootProps, getInputProps }) => (
+        <Area>
+          <S.Content {...getRootProps()}>
+            {options && <Avatar {...options} />}
 
-      <input
-        type="file"
-        id="upload"
-        accept="image/*"
-        hidden
-        required
-        onChange={(e) => handlePreviewProfileImage(e)}
-        ref={inputRef}
-      />
-    </S.Wrapper>
+            <S.Text>
+              <S.TitleArea>
+                <S.Icon
+                  src="/img/image-icon.png"
+                  alt="Ilustração de montanhas e sol, simbolizando um ícone de imagem"
+                />
+                <S.Title>Organization Logo</S.Title>
+              </S.TitleArea>
+              <S.Subtitle>Drop the image here or click to browse</S.Subtitle>
+            </S.Text>
+            <input {...getInputProps()} />
+          </S.Content>
+        </Area>
+      )}
+    </Dropzone>
   );
 }

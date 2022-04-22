@@ -7,7 +7,7 @@ export type CropSliderProps = {
   handleUpdateSliderValue: (value: number | number[]) => void;
 };
 
-export default function CropSlider({
+export function CropSlider({
   sliderValue,
   handleUpdateSliderValue,
 }: CropSliderProps) {

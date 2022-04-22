@@ -2,8 +2,8 @@ import { lighten } from 'polished';
 import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.div`
-  width: 276px;
-  height: 113px;
+  width: 100%;
+  height: max-content;
   display: flex;
   flex-direction: column;
   align-items: flex-start !important;

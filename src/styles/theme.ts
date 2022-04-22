@@ -32,7 +32,7 @@ export default {
     orange: '#C64D32',
     blue: '#3F80FF',
     border: '#C7CDD3',
-    white: '#FAFAFA',
+    white: '#FFFFFF',
   },
   spacings: {
     xxsmall: '0.8rem',
