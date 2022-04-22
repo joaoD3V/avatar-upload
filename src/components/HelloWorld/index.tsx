@@ -1,3 +1,9 @@
+import * as S from './styles';
+
 export default function HelloWorld() {
-  return <h1>HelloWorld</h1>;
+  return (
+    <S.Wrapper>
+      <h1>HelloWorld</h1>
+    </S.Wrapper>
+  );
 }
