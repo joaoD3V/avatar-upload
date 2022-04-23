@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Avatar /> should render the avatar correctly 1`] = `
+<canvas
+  aria-label="Avatar canva"
+  height="113"
+  style="width: 113px; height: 113px; cursor: grab;"
+  width="113"
+/>
+`;

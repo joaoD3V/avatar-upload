@@ -16,6 +16,7 @@ export function Avatar({ src, sliderValue }: AvatarProps) {
       borderRadius={72.5}
       scale={1 + sliderValue / 10}
       rotate={0}
+      aria-label="Avatar canva"
     />
   );
 }
