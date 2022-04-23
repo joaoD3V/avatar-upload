@@ -36,7 +36,7 @@ export function AvatarUpload({ options }: AvatarUploadProps) {
                 />
                 <S.Title>Organization Logo</S.Title>
               </S.TitleArea>
-              <S.Subtitle>Drop the image here or click to browse</S.Subtitle>
+              <S.Subtitle>Drop the image here or click to browse.</S.Subtitle>
             </S.Text>
             <input {...getInputProps()} />
           </S.Content>
