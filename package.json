@@ -15,11 +15,12 @@
     "next": "12.1.5",
     "polished": "^4.2.2",
     "rc-slider": "^10.0.0",
-    "react": "18.0.0",
+    "react": "^17.0.2",
     "react-avatar-editor": "^12.0.0",
-    "react-dom": "18.0.0",
+    "react-dom": "^17.0.2",
     "react-dropzone": "^12.0.5",
-    "styled-components": "^5.3.5"
+    "react-is": "^17.0.2",
+    "styled-components": "^5.2.3"
   },
   "devDependencies": {
     "@babel/core": "^7.17.9",
