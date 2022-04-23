@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Area /> should render with border and without close button by default 1`] = `
+.c0 {
+  width: 553px;
+  height: 177px;
+  background: #F2F5F8;
+  border: 2px dashed #C7CDD3;
+  border-radius: 8px;
+  padding: 32px;
+  position: relative;
+}
+
+@media (max-width:768px) {
+  .c0 {
+    width: 90vw;
+    height: 277px;
+    padding: 16px;
+  }
+}
+
+<div
+  aria-label="Wrapper"
+  class="c0"
+>
+  Test
+</div>
+`;

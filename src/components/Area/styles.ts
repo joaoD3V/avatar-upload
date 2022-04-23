@@ -10,7 +10,7 @@ export const Wrapper = styled.div<WrapperProps>`
     width: 553px;
     height: 177px;
     background: ${theme.colors.gray200};
-    ${hasBorder && `border: 2px dashed ${theme.colors.border}`};
+    ${hasBorder ? `border: 2px dashed ${theme.colors.border}` : 'border: 0'};
     border-radius: 8px;
     padding: 32px;
     position: relative;

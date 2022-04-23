@@ -14,11 +14,16 @@ export function Area({ children, hasClose = false }: AreaProps) {
       hasBorder={
         status === 'initial' ? true : status === 'saved' ? true : false
       }
+      aria-label="Wrapper"
     >
       {children}
 
       {hasClose && (
-        <S.CloseButton title="Close edit" onClick={handleClose}>
+        <S.CloseButton
+          title="Close edit"
+          onClick={handleClose}
+          aria-label="Close button"
+        >
           <img
             src="/img/close-icon.png"
             alt="Icon with the symbol X, indicating the action to close edit"
