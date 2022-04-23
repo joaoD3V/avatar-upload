@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[
+  `<AvatarError /> should render without border and with close button by default 1`
+] = `
+.c0 {
+  width: 553px;
+  height: 177px;
+  background: #F2F5F8;
+  border: 0;
+  border-radius: 8px;
+  padding: 32px;
+  position: relative;
+}
+
+.c6 {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.c1 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c2 {
+  width: 113px;
+  height: 113px;
+  border-radius: 72.5px;
+  background: #C3CBD5;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: 3.2rem;
+}
+
+.c4 {
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #C64D32;
+}
+
+.c5 {
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #3D485F;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  margin-top: 12px;
+  cursor: pointer;
+  -webkit-transition: color 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out;
+}
+
+.c5:hover {
+  color: #151921;
+}
+
+@media (max-width:768px) {
+  .c0 {
+    width: 90vw;
+    height: 277px;
+    padding: 16px;
+  }
+}
+
+@media (max-width:768px) {
+  .c1 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: space-around;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: space-around;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width:768px) {
+  .c3 {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-left: 0;
+  }
+}
+
+<div
+  aria-label="Wrapper"
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2"
+    >
+      <img
+        alt="Exclamation icon"
+        src="/img/attention-icon.png"
+      />
+    </div>
+    <div
+      class="c3"
+    >
+      <span
+        class="c4"
+      >
+        Sorry, the upload failed.
+      </span>
+      <button
+        class="c5"
+        title="Try Again"
+      >
+        Try again
+      </button>
+    </div>
+  </div>
+  <button
+    aria-label="Close button"
+    class="c6"
+    title="Close edit"
+  >
+    <img
+      alt="Icon with the symbol X, indicating the action to close edit"
+      src="/img/close-icon.png"
+    />
+  </button>
+</div>
+`;
