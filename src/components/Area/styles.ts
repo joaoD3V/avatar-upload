@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import media from 'styled-media-query';
 
 type WrapperProps = {
   hasBorder: boolean;
@@ -13,6 +14,12 @@ export const Wrapper = styled.div<WrapperProps>`
     border-radius: 8px;
     padding: 32px;
     position: relative;
+
+    ${media.lessThan('medium')`
+       width: 90vw;
+       height: 277px;
+       padding: 16px;
+    `}
   `}
 `;
 

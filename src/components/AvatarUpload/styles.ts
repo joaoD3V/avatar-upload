@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import media from 'styled-media-query';
 
 export const Content = styled.div`
   width: 100%;
@@ -7,6 +8,12 @@ export const Content = styled.div`
   align-items: center;
   justify-content: flex-start;
   cursor: pointer;
+
+  ${media.lessThan('medium')`
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  `}
 `;
 
 export const Text = styled.div`

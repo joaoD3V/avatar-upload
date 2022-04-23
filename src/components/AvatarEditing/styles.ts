@@ -1,5 +1,6 @@
 import { darken } from 'polished';
 import styled, { css } from 'styled-components';
+import media from 'styled-media-query';
 
 export const Content = styled.div`
   ${({ theme }) => css`
@@ -12,7 +13,17 @@ export const Content = styled.div`
     canvas {
       margin-right: ${theme.spacings.medium};
       pointer-events: none;
+
+      ${media.lessThan('medium')`
+        margin-right: 0;
+      `}
     }
+
+    ${media.lessThan('medium')`
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    `}
   `}
 `;
 
@@ -25,6 +36,10 @@ export const CropArea = styled.div`
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-start;
+
+    ${media.lessThan('medium')`
+      align-items: center;
+    `}
   `}
 `;
 

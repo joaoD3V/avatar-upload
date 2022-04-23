@@ -1,5 +1,6 @@
 import { darken } from 'polished';
 import styled, { css } from 'styled-components';
+import media from 'styled-media-query';
 
 export const Content = styled.div`
   width: 100%;
@@ -7,6 +8,12 @@ export const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
+
+  ${media.lessThan('medium')`
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  `}
 `;
 
 export const IconArea = styled.div`
@@ -28,6 +35,12 @@ export const Text = styled.div`
     align-items: flex-start;
     justify-content: flex-start;
     margin-left: ${theme.spacings.medium};
+
+    ${media.lessThan('medium')`
+      align-items: center;
+      justify-content: center;
+      margin-left: 0;
+    `}
   `}
 `;
 
