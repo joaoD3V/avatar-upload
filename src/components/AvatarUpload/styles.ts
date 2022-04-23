@@ -9,6 +9,10 @@ export const Content = styled.div`
   justify-content: flex-start;
   cursor: pointer;
 
+  canvas {
+    pointer-events: none;
+  }
+
   ${media.lessThan('medium')`
     flex-direction: column;
     align-items: center;
