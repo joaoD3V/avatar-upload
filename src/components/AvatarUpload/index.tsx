@@ -21,6 +21,7 @@ export function AvatarUpload({ options }: AvatarUploadProps) {
           : handlePreviewProfileImage(acceptedFiles);
       }}
       accept={['image/jpeg', 'image/png', 'image/webp']}
+      multiple={false}
     >
       {({ getRootProps, getInputProps }) => (
         <Area>
