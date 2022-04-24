@@ -3,7 +3,7 @@ import { renderWithTheme } from 'utils/tests/helpers';
 
 import { CropSlider } from '.';
 
-describe('<AvatarEditing />', () => {
+describe('<CropSlider />', () => {
   it('should render title and slider correctly', () => {
     const handleUpdateSliderValue = jest.fn();
     const { container } = renderWithTheme(

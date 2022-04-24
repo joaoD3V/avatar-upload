@@ -25,7 +25,7 @@ export function AvatarUpload({ options }: AvatarUploadProps) {
     >
       {({ getRootProps, getInputProps }) => (
         <Area>
-          <S.Content {...getRootProps()}>
+          <S.Content {...getRootProps()} data-testid="drop-wrapper">
             {options && <Avatar {...options} />}
 
             <S.Text>
@@ -38,7 +38,7 @@ export function AvatarUpload({ options }: AvatarUploadProps) {
               </S.TitleArea>
               <S.Subtitle>Drop the image here or click to browse.</S.Subtitle>
             </S.Text>
-            <input {...getInputProps()} />
+            <input {...getInputProps()} data-testid="drop-input" />
           </S.Content>
         </Area>
       )}

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<AvatarEditing /> should render title and slider correctly 1`] = `
+exports[`<CropSlider /> should render title and slider correctly 1`] = `
 .c0 {
   width: 100%;
   height: -webkit-max-content;
