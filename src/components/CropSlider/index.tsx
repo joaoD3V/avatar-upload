@@ -21,6 +21,7 @@ export function CropSlider({
           max={100}
           value={sliderValue}
           onChange={(value) => handleUpdateSliderValue(value)}
+          ariaLabelForHandle="Crop slider"
         />
       </S.Slider>
     </S.Wrapper>
