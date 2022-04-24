@@ -9,7 +9,7 @@ export function Home() {
   const { status, avatarImage, sliderValue } = useAvatar();
 
   return (
-    <S.Wrapper>
+    <S.Wrapper aria-label="Home template">
       {status === 'initial' && <AvatarUpload />}
       {status === 'editing' && avatarImage && (
         <AvatarEditing src={`${avatarImage}`} />
