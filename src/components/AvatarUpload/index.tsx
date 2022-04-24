@@ -30,7 +30,7 @@ export function AvatarUpload({ options }: AvatarUploadProps) {
 
             <S.Text>
               <S.TitleArea>
-                <S.Icon
+                <img
                   src="/img/image-icon.png"
                   alt="Illustration of mountains and sun, symbolizing a picture icon"
                 />

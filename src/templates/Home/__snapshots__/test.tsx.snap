@@ -2,8 +2,9 @@
 
 exports[`<Home /> should render top-level wrapper correctly 1`] = `
 .c0 {
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
+  max-height: 100vh;
   background: #FFFFFF;
   display: -webkit-box;
   display: -webkit-flex;

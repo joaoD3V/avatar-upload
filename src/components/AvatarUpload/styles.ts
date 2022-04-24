@@ -32,9 +32,12 @@ export const TitleArea = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-`;
 
-export const Icon = styled.img``;
+  img {
+    width: 16px;
+    height: 12px;
+  }
+`;
 
 export const Title = styled.span`
   ${({ theme }) => css`

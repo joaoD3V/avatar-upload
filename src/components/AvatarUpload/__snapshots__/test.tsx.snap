@@ -67,6 +67,11 @@ exports[`<AvatarUpload /> should render without avatar by default 1`] = `
   justify-content: center;
 }
 
+.c3 img {
+  width: 16px;
+  height: 12px;
+}
+
 .c4 {
   font-weight: 500;
   font-size: 14px;
@@ -123,7 +128,6 @@ exports[`<AvatarUpload /> should render without avatar by default 1`] = `
       >
         <img
           alt="Illustration of mountains and sun, symbolizing a picture icon"
-          class=""
           src="/img/image-icon.png"
         />
         <span
