@@ -2,6 +2,11 @@
   "name": "avatar-upload",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "João Pedro Santos da Silva",
+    "email": "joao.devweb@gmail.com",
+    "url": "https://github.com/joaoD3V"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
