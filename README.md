@@ -1,34 +1,104 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+[🇧🇷 Leia esta página em português](http....README-ptbr.md)
+[🇺🇸 Read this page in English](http....README.md)
 
-First, run the development server:
+-------------
+##### 🇺🇸  Croct - Front End Challenge
 
-```bash
-npm run dev
-# or
+# Avatar Upload
+
+Web system that allows users to upload images of their organizations. In addition, users can make edits by adjusting the images according to the zoom crop.
+
+------------
+
+### Overview
+
+ Uploading, adjusting and saving the image:
+
+![Uploading, adjusting and saving](https://media.giphy.com/media/WD3hedWHFFbdZlimRE/giphy.gif)
+
+Error uploading file with incorrect extension:
+
+![Error](https://media.giphy.com/media/c8GYWyLeCjDETISMw8/giphy.gif)
+
+Canceling the edit and returning to the initial state:
+
+![Canceling](https://media.giphy.com/media/Gv9JYLu9YjFsSH5eKY/giphy.gif)
+
+------------
+
+
+### Main technologies used during the challenge
+
+- **ReactJS**: lib for building frontend interfaces.
+- **NextJS**: React framework ready for production.
+- **TypeScript**: superset for JavaScript.
+- **Supabase**: for realtime data storage.
+- **Styled Components**: for components styling.
+- **ContextAPI**: for sharing state between components.
+- **Jest e Testing Library**: for performing automated unit tests.
+
+------------
+
+### Automated Tests
+
+[Tests image](https://imgur.com/ZkjXoew)
+
+
+File                      | % Stmts | % Branch | % Funcs | % Lines |
+--------------------------|---------|----------|---------|---------|
+All files                 |      94 |    78.26 |      88 |      94 |
+
+------------
+
+### Application performance
+
+[Image from Google LightHouse](https://imgur.com/Ug8kgoC)
+
+
+| % Performance | % Accessibility | % Best practices | % SEO |
+|---------|----------|---------|---------|
+|      88 |    97 |      75 |      90 |
+
+------------
+
+### Improvements that can be made
+- Perform unit tests with context features
+- Perform black box tests using Cypress
+
+------------
+
+### Mandatory settings
+1. Install the following plugins in your code editor. (Suggestion: VSCode)
+ * [ESlint](https://eslint.org/)
+ * [EditorConfig](https://editorconfig.org/)
+ 2. Install Node above version 16 and Yarn above version 1.
+ -	[Node (instalação passo-a-passo)](https://www.notion.so/Instalando-o-Node-js-d40fdabe8f0a491eb33b85da93d90a2f)
+ -	[Yarn (instalação passo-a-passo)](https://www.notion.so/Instalando-o-Yarn-eca6a13be5b3467d8d2f7be15c60f322)
+------------
+### Installation and execution
+
+**Installation of dependencies**
+```
+yarn
+```
+
+To run in development mode
+```
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To view stories in **StoryBook**:
+```
+yarn storybook
+```
+To run **all automated tests**:
+```
+yarn test
+```
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+------------
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Host
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+To see the application running in production, just [click here](https://avatar-upload-joaod3v.vercel.app/).
