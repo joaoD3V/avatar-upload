@@ -34,7 +34,6 @@ Canceling the edit and returning to the initial state:
 - **ReactJS**: lib for building frontend interfaces.
 - **NextJS**: React framework ready for production.
 - **TypeScript**: superset for JavaScript.
-- **Supabase**: for realtime data storage.
 - **Styled Components**: for components styling.
 - **ContextAPI**: for sharing state between components.
 - **Jest e Testing Library**: for performing automated unit tests.
