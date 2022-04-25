@@ -1,6 +1,7 @@
 
-[🇧🇷 Leia esta página em português](http....README-ptbr.md)
-[🇺🇸 Read this page in English](http....README.md)
+[🇧🇷 Leia esta página em português](https://github.com/joaoD3V/avatar-upload/blob/main/README-ptbr.md)
+
+[🇺🇸 Read this page in English](https://github.com/joaoD3V/avatar-upload/blob/main/README.md)
 
 -------------
 ##### 🇺🇸  Croct - Front End Challenge
